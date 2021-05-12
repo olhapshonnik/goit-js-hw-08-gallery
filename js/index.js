@@ -1,8 +1,7 @@
-import galleryItems from './gallery-items';
+import galleryItems from './gallery-items.js';
 
 const gallery = document.querySelector('.js-gallery');
 const lightbox = document.querySelector('.js-lightbox');
-
 
 const imageList = galleryItems
   .map(({ original, preview, description }) => {
@@ -20,3 +19,8 @@ const imageList = galleryItems
   .join('');
 
 gallery.insertAdjacentHTML('afterbegin', imageList);
+// const lightboxImage = document.querySelector('.lightbox__image');
+// const lightboxOverlay = document.querySelector('.lightbox__overlay');
+
+// gallery.addEventListener('click', openModal);
+// lightboxOverlay.addEventListener('click', closeModal);
